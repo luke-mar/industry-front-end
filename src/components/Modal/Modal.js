@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import "../Modal/Modal.scss";
 // import { ReactComponent as X } from "../../assets/icons/close-24px.svg";
 
-function WarehouseModal({ open, onClose, handler, warehouse_name }) {
+function WarehouseModal({ open, onClose, handler }) {
   if (!open) return null;
 
   return ReactDom.createPortal(
@@ -11,10 +11,11 @@ function WarehouseModal({ open, onClose, handler, warehouse_name }) {
       <div className="modalStyle">
         {/* <X onClick={onClose} /> */}
         <div className="modalContainer">
-          <h1 className="modalTitle">Delete {warehouse_name} warehouse?</h1>
+          <h1 className="modalTitle">Event Review</h1>
           <p className="modalText">
-            Please confirm that you'd like to delete the {warehouse_name} from
-            the list of warehouses. You won't be able to undo this action.
+            Please take a moment to leave a review for last month's team event.
+            Your feedback helps us plan better building opportunities for the
+            team.
           </p>
           <div className="buttonContainer">
             <button onClick={onClose} className="modalButton">
