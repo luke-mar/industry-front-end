@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    color: #000000;
+    &__h1 {
+        padding-bottom: 30px;
+        color: #005151;
+    }
+    &__options {
+        margin-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    &__option {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+    }
+}

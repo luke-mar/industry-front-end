@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    border-bottom: 1px #005151 solid;
+    display: flex;
+    flex-direction: row;
+    &__logo {
+        width: 20%;
+    }
+    &__links {
+        width: 60%;
+    }
+    &__link {
+        color: #005151;
+        padding-right: 30px;
+    }
+    &__searchAndButton {
+        display: flex;
+        width: 20%;
+    }
+}
