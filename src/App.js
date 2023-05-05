@@ -1,10 +1,12 @@
 import './App.scss';
 
+import Poll from "./components/Poll/Poll";
+
 function App() {
   return (
-    <div>
-        Hello World
-    </div>
+    <>
+      <Poll />
+    </>
   );
 }
 
