@@ -20,9 +20,9 @@ function EmployeeForm() {
                         Which of the following statements best describes your current relationship with your colleagues?
                         <div className="form__options">
                             <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb1Q1" value="We have a strong sense of camaraderie and connection."/><p>We have a strong sense of camaraderie and connection.</p></div>
-                            <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb2Q1" value="We have a cordial but distant relationship."/><div>We have a cordial but distant relationship.</div></div>
-                            <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb3Q1" value="We have a strained or conflict-ridden relationship."/><div>We have a strained or conflict-ridden relationship.</div></div>
-                            <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb4Q1" value="I do not know my colleagues well enough to form an opinion."/><div>We have a cordial but distant relationship.</div>I do not know my colleagues well enough to form an opinion.</div>
+                            <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb2Q1" value="We have a cordial but distant relationship."/><p>We have a cordial but distant relationship.</p></div>
+                            <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb3Q1" value="We have a strained or conflict-ridden relationship."/><p>We have a strained or conflict-ridden relationship.</p></div>
+                            <div className="form__option"><input className="form__checkbox" type="checkbox" name="cb4Q1" value="I do not know my colleagues well enough to form an opinion."/><p>I do not know my colleagues well enough to form an opinion.</p></div>
                         </div>
                     </li>
                     <li className="form__question">
