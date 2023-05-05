@@ -1,0 +1,46 @@
+.nav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 2px #66CBBB solid;
+    display: flex;
+    flex-direction: row;
+    padding-right: 5%;
+    padding-left: 5%;
+    &__logoContainer {
+        width: 15%;
+    }
+    &__logo {
+        width: 75px;
+    }
+    &__links {
+        width: 70%;
+    }
+    &__link {
+        color: #005151;
+        padding-right: 30px;
+    }
+    &__link:visited {
+        color: #005151;
+    }
+    &__link:hover {
+        font-weight: bold;
+    }
+    &__searchAndButton {
+        display: flex;
+        width: 15%;
+    }
+    &__obButton {
+        color: #005151;
+        padding: 10px;
+        background-color: #F6C844;
+        border-radius: 20px;
+        margin-left: 30px;
+    }
+    &__buttonLink {
+        color: #005151;
+    }
+    &__buttonLink:visited {
+        color: #005151;
+    }
+}
