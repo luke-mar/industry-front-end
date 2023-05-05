@@ -1,0 +1,63 @@
+// Desktop Font Sizes
+
+@mixin font_Header-Desktop {
+    font-size: 2.0625rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+}
+
+@mixin font_SectionHeader-Desktop {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+@mixin font_SubHeader-Desktop {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+}
+
+@mixin font_Body-Desktop {
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+
+@mixin font_Labels-Buttons-Desktop {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+// Mobile Font Sizes
+
+@mixin font_Header-Mobile {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+@mixin font_SectionHeader-Mobile {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+@mixin font_SubHeader-Mobile {
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+}
+
+@mixin font_Body-Mobile {
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+}
+
+@mixin font_Labels-Buttons-Mobile {
+    font-size: .625rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
