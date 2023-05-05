@@ -9,9 +9,10 @@ import Poll from "./components/Poll/Poll";
 function App() {
   return (
     <>
-
+    <Header />
       <Routes>
         <Route path="/" element={<UpcomingEvent />} />
+        <Route path="/review" element={<EmployeeForm />} />
       </Routes> 
 
     </>
