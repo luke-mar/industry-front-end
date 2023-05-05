@@ -1,10 +1,17 @@
 import './App.scss';
+import UpcomingEvent from './components/UpcomingEvent/UpcomingEvent';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-        Hello World
-    </div>
+    <>
+
+      <Routes>
+        <Route path="/" element={<UpcomingEvent />} />
+      </Routes> 
+
+    </>
+
   );
 }
 
