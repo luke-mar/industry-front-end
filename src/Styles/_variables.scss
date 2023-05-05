@@ -1,0 +1,97 @@
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1280px;
+
+/* Font Styles 
+
+H1 or Page Header */
+
+$font-size-h1-tablet: 2rem;
+$font-size-h1-mobile: 1.75rem;
+
+$line-height-h1-tablet: 2.5rem;
+$line-height-h1-mobile: 2.25rem;
+
+/* H2 Subheader */
+
+$font-size-h2-tablet: 1.5rem;
+$font-size-h2-mobile: 1.25rem;
+
+$line-height-h2-tablet: 2rem;
+$line-height-h2-mobile: 1.75rem;
+
+/* H3 Labels, Links & Buttons*/
+
+$font-size-h3-tablet: .875rem;
+$font-size-h3-mobile: .8125rem;
+
+$line-height-h3-tablet: 1.375rem;
+$line-height-h3-mobile: 1.25rem;
+
+/* H4 Table Header*/
+
+$font-size-h4-tablet: .75rem;
+$font-size-h4-mobile: .6875rem;
+
+$line-height-h4-tablet: 1.125rem;
+$line-height-h4-mobile: 1rem;
+
+/* Body Large P1*/
+
+$font-size-p1-tablet: 1rem;
+$font-size-p1-mobile: .9375rem;
+
+$line-height-p1-tablet: 1.75rem;
+$line-height-p1-mobile: 1.625rem;
+
+/* Body Medium P2*/
+
+$font-size-p2-tablet: .875rem;
+$font-size-p2-mobile: .8125rem;
+
+$line-height-p2-tablet: 1.375rem;
+$line-height-p2-mobile: 1.25rem;
+
+/* Body Small P3*/
+
+$font-size-p3-tablet: .75rem;
+$font-size-p3-mobile: .6875rem;
+
+$line-height-p3-tablet: 1.125rem;
+$line-height-p3-mobile: 1rem;
+
+/* Colors */
+
+/* Primary Colors */
+$color-instock-black: #13182C;
+$color-instock-indigo: #2E66E5;
+$color-white: #FFFFFF;
+
+/* Secondary Colors */
+
+$color-slate: #5C667E;
+$color-cloud: #BDC5D5;
+
+/* Background Colors */
+$color-graphite: #232940;
+$color-light-grey: #F7F8F9;
+
+/* Supporting Colors */
+$color-green: #158463;
+$color-red: #C94515;
+
+/* Hover and Active Button Colors */
+$color-blue-hover: #2b5ed3;
+$color-blue-active: #1b45a7;
+
+$color-red-hover: #ba4115;
+$color-red-active: #a13710;
+
+$color-white-hover: #ebebeb;
+$color-white-active: #cecece;
+
+/* PADDING */
+$padding-viewport-mobile: 1rem;
+$padding-viewport-tablet: 2rem;
+
+$padding-bottom-heading-mobile: 1.5rem;
+$padding-bottom-h3-mobile: .25rem;

@@ -1,0 +1,103 @@
+@use "../../Styles/global" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.overlayStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(36, 32, 56, 0.5);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.modalStyle {
+  position: relative;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  @include tablet {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -110%);
+    background-color: $color-white;
+    padding: 1rem;
+    width: 85%;
+    height: fit-content;
+  }
+  @include desktop {
+    transform: translate(-50%, -70%);
+    width: 50%;
+  }
+
+  & svg {
+    margin-bottom: 2rem;
+    margin-left: auto;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  @include tablet {
+    padding: 1rem 2rem;
+  }
+}
+
+.modalTitle {
+  @include h2-mobile;
+  padding-bottom: 2rem;
+
+  @include tablet {
+    @include h1-tablet;
+    padding-bottom: 1rem;
+  }
+}
+
+.modalText {
+  @include font-p2-mobile;
+
+  @include tablet {
+    @include font-p1-tablet;
+    margin-bottom: 2rem;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  justify-self: end;
+  margin-top: auto;
+  @include tablet {
+    width: fit-content;
+    margin-left: auto;
+  }
+}
+
+.modalButton {
+  @include button-white;
+  width: 47%;
+  @include tablet {
+    width: fit-content;
+    margin-right: 1rem;
+  }
+
+  &-delete {
+    @include button-red;
+    width: 47%;
+    @include tablet {
+      width: fit-content;
+    }
+  }
+}

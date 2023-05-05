@@ -1,0 +1,228 @@
+@use "./variables" as *;
+
+// media breakpoints
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+//page component shadow
+@mixin shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+// h1
+
+@mixin h1-tablet {
+  font-size: $font-size-h1-tablet;
+  line-height: $line-height-h1-tablet;
+}
+
+@mixin h1-mobile {
+  font-size: $font-size-h1-mobile;
+  line-height: $line-height-h1-mobile;
+}
+
+// h2
+
+@mixin h2-tablet {
+  font-size: $font-size-h2-tablet;
+  line-height: $line-height-h2-tablet;
+}
+
+@mixin h2-mobile {
+  font-size: $font-size-h2-mobile;
+  line-height: $line-height-h2-mobile;
+}
+
+// h3
+
+@mixin h3-tablet {
+  font-size: $font-size-h3-tablet;
+  line-height: $line-height-h3-tablet;
+}
+
+@mixin h3-mobile {
+  font-size: $font-size-h3-mobile;
+  line-height: $line-height-h3-mobile;
+}
+
+@mixin h4-tablet {
+  font-size: $font-size-h4-tablet;
+  line-height: $line-height-h4-tablet;
+}
+
+@mixin h4-mobile {
+  font-size: $font-size-h4-mobile;
+  line-height: $line-height-h4-mobile;
+}
+
+// body text
+
+@mixin font-p1-tablet {
+  font-size: $font-size-p1-tablet;
+  line-height: $line-height-p1-tablet;
+}
+
+@mixin font-p1-mobile {
+  font-size: $font-size-p1-mobile;
+  line-height: $line-height-p1-mobile;
+}
+
+@mixin font-p2-tablet {
+  font-size: $font-size-p2-tablet;
+  line-height: $line-height-p2-tablet;
+}
+
+@mixin font-p2-mobile {
+  font-size: $font-size-p2-mobile;
+  line-height: $line-height-p2-mobile;
+}
+
+@mixin font-p3-tablet {
+  font-size: $font-size-p3-tablet;
+  line-height: $line-height-p3-tablet;
+}
+
+@mixin font-p3-mobile {
+  font-size: $font-size-p3-mobile;
+  line-height: $line-height-p3-mobile;
+}
+
+//Buttons
+@mixin button-blue {
+  background-color: $color-instock-indigo;
+  border-radius: 20px;
+  border: none;
+  color: $color-white;
+  height: 36px;
+  width: 100%;
+  @include font-p2-mobile;
+  @include tablet {
+    height: 38px;
+    width: fit-content;
+    padding: 0 16px;
+    @include font-p2-tablet;
+  }
+  &:hover {
+    background-color: $color-blue-hover;
+  }
+  &:active {
+    background-color: $color-blue-active;
+  }
+}
+
+@mixin button-red {
+  background-color: $color-red;
+  border-radius: 20px;
+  border: none;
+  color: $color-white;
+  height: 36px;
+  width: 100%;
+  @include font-p2-mobile;
+  @include tablet {
+    height: 38px;
+    width: fit-content;
+    padding: 0 16px;
+    @include font-p2-tablet;
+  }
+
+  &:hover {
+    background-color: $color-red-hover;
+  }
+  &:active {
+    background-color: $color-red-active;
+  }
+}
+
+@mixin button-white {
+  background-color: $color-white;
+  border-radius: 20px;
+  border: 1px solid $color-cloud;
+  color: $color-slate;
+  height: 36px;
+  width: 100%;
+  @include font-p2-mobile;
+  @include tablet {
+    height: 38px;
+    width: fit-content;
+    padding: 0 16px;
+    @include font-p2-tablet;
+  }
+
+  &:hover {
+    background-color: $color-white-hover;
+  }
+  &:active {
+    background-color: $color-white-active;
+  }
+}
+
+@mixin mobil-header-button {
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  line-height: 20px;
+  border-radius: 20px;
+  height: 36px;
+  width: 50%;
+  background-color: $color-graphite;
+  border: none;
+  color: $color-cloud;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-white;
+  }
+
+  &.active {
+    background-color: $color-instock-black;
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &--wrapper {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+@mixin in-stock {
+  border-radius: 1.4rem;
+  width: fit-content;
+  font-size: 0.55rem;
+  padding: 1px 8px;
+  border: none;
+  font-weight: 700;
+  color: rgba(21, 132, 99, 0.9);
+  background-color: rgba(21, 132, 99, 0.1);
+  @include tablet {
+    font-size: 0.65rem;
+  }
+}
+
+@mixin out-of-stock {
+  border-radius: 1.4rem;
+  width: fit-content;
+  font-size: 0.55rem;
+  border: none;
+  font-weight: 700;
+  color: rgba(201, 69, 21, 0.9);
+  background-color: rgba(201, 69, 21, 0.1);
+  padding: 1px 8px;
+  @include tablet {
+    font-size: 0.7rem;
+  }
+}
