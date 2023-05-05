@@ -3,7 +3,6 @@
 
 
 .poll {
-    background-color: blue;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12,19 +11,28 @@
 
     &__opt {
         display: flex;
+        justify-content: center;
         padding: 16px 0px;
-        background-color: purple;
-        width: 80%;
+        width: 100%;
         margin: 8px;
+
+        &:first-of-type {
+            width: 80%;
+        }
     }
 
     &__title {
-        padding: 0px 16px;
-        background-color: beige;
+        padding: 30px 16px;
+        font-size: 32px;
+        width: 100%;
+        text-align: center;
+        color: $dark-green;
     }
 
     &__sec {
-        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         margin: 16px;
 
@@ -34,10 +42,218 @@
     }
 
     &__card {
-        background-color: green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 480px;
+        border: 2px solid $primary-green;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        padding: 32px 0px;
+        transition: ease-in-out .05s;
+        margin: 24px 0px;
+
+        &:nth-of-type(2) {
+            border: 2px solid $primary-blue;
+
+            &:hover {
+                outline: 4px solid $primary-blue;
+                cursor: pointer;
+            }
+
+            & .poll__card--percent-bar {
+                overflow: hidden;
+                width: 100%;
+
+                &--active {
+                    position: absolute;
+                    background-color: $primary-blue;
+                    width: 15%;
+                    padding: 4px;
+                    border-radius: 60px;
+                }
+
+                &--bg {
+                    width: 100%;
+                    padding: 4px;
+                    border-radius: 60px;
+                    background-color: $primary-blue;
+                    opacity: 40%;
+                }
+
+            }
+        }
+
+        &:nth-of-type(3) {
+            border: 2px solid $primary-pink;
+
+            &:hover {
+                outline: 4px solid $primary-pink;
+                cursor: pointer;
+            }
+
+
+            & .poll__card--percent-bar {
+                overflow: hidden;
+                width: 100%;
+
+                &--active {
+                    position: absolute;
+                    background-color: $primary-pink;
+                    width: 15%;
+                    padding: 4px;
+                    border-radius: 60px;
+                }
+
+                &--bg {
+                    width: 100%;
+                    padding: 4px;
+                    border-radius: 60px;
+                    background-color: $primary-pink;
+                    opacity: 40%;
+                }
+
+            }
+        }
+
+        &:nth-of-type(4) {
+            border: 2px solid orange;
+
+            &:hover {
+                outline: 4px solid orange;
+                cursor: pointer;
+            }
+
+
+            & .poll__card--percent-bar {
+                overflow: hidden;
+                width: 100%;
+
+                &--active {
+                    position: absolute;
+                    background-color: orange;
+                    width: 15%;
+                    padding: 4px;
+                    border-radius: 60px;
+                }
+
+                &--bg {
+                    width: 100%;
+                    padding: 4px;
+                    border-radius: 60px;
+                    background-color: orange;
+                    opacity: 40%;
+                }
+
+            }
+        }
+
+        &:hover {
+            outline: 4px solid $primary-green;
+            cursor: pointer;
+        }
+
+        &--percent {
+            @include font_Labels-Buttons-Mobile;
+            font-size: 20px;
+            align-self: center;
+            font-weight: 800;
+        }
 
         &--sec {
-            background-color: rgb(115, 115, 169);
+            display: flex;
+            flex-direction: column;
+            margin: 8px 0px;
+            width: 90%;
+
+            &:first-of-type {
+                margin-bottom: 16px;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+
+        &--percent-bar {
+            overflow: hidden;
+            width: 100%;
+
+            &--active {
+                position: absolute;
+                background-color: $primary-green;
+                width: 15%;
+                padding: 4px;
+                border-radius: 60px;
+            }
+
+            &--bg {
+                width: 100%;
+                padding: 4px;
+                border-radius: 60px;
+                background-color: $primary-green;
+                opacity: 40%;
+            }
+
+        }
+
+        &--data {
+            padding: 8px 0px;
+            display: flex;
+        }
+
+        &--vote {
+            margin: 8px 8px;
+            color: $grey;
+        }
+
+        &--link {
+            margin: 8px 8px;
+            text-decoration: underline;
+            color: rgb(0, 152, 228);
+            cursor: pointer;
+        }
+
+        &--img {
+            width: 200px;
+            margin-right: 220px;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 70%;
+        height: 300px;
+        padding: 16px;
+
+        &--data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $grey;
+        }
+
+        &--vote {
+
+            &-count {
+                font-size: 60px;
+                font-weight: 800;
+                color: $dark-green;
+            }
+        }
+
+        &--link {
+            margin: 8px 8px;
+            text-decoration: underline;
+            color: rgb(0, 152, 228);
+            cursor: pointer;
         }
     }
 }

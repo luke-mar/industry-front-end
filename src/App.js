@@ -13,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<UpcomingEvent />} />
         <Route path="/review" element={<EmployeeForm />} />
-      </Routes> 
+        <Route path="/poll" element={<Poll />} />
+      </Routes>
 
     </>
 
