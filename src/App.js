@@ -10,7 +10,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<UpcomingEvent />} />
-      </Routes> 
+        <Route path="/poll" element={<Poll />} />
+      </Routes>
 
     </>
 
