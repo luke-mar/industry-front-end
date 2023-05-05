@@ -1,0 +1,22 @@
+@use './_variables' as *;
+@use './mixins' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$dark-green: #005151;
+$light-green: #66cbbb;
+$off-white: #fcfcfc;
+$grey: #a2a2a2;
+$black: #0c0c0c44;
+
+$primary-green: #00e450;
+$primary-blue: #4d9ffe;
+$primary-pink: #e8178a;
